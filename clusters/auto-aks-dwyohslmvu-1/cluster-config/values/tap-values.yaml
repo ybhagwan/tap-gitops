@@ -1,0 +1,14 @@
+---
+tap_install:
+  values:
+    profile: view
+    ceip_policy_disclosed: true
+    
+    contour:
+      envoy:
+        service:
+          type: LoadBalancer
+
+    tap_telemetry:
+      customer_entitlement_account_number: "123456789"
+      installed_for_vmware_internal_use: "true"
