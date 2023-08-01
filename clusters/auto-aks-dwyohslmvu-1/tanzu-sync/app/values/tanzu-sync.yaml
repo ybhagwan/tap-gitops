@@ -1,0 +1,7 @@
+---
+git:
+  url: https://github.com/ipillai91/tap-gitops2.git
+  ref: origin/master
+  sub_path: clusters/auto-aks-dwyohslmvu-1/cluster-config
+tap_package_repository:
+  oci_repository: registry.tanzu.vmware.com/tanzu-application-platform/tap-packages

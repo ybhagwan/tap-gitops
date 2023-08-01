@@ -1,0 +1,23 @@
+---
+secrets:
+  eso:
+    vault:
+      server: http://3.144.152.24:8200
+      namespace: ""
+      auth:
+        kubernetes:
+          mountPath: auto-aks-dwyohslmvu-1
+          role: auto-aks-dwyohslmvu-1--tanzu-sync-secrets
+    remote_refs:
+      sync_git:
+        basic_auth:
+          username:
+            key: secret/dev/auto-aks-dwyohslmvu-1/tanzu-sync/sync-git/basic_auth
+            property: username
+          password:
+            key: secret/dev/auto-aks-dwyohslmvu-1/tanzu-sync/sync-git/basic_auth
+            property: password
+      # TODO: Fill in your configuration for ssh or basic auth here (see tanzu-sync/app/config/.tanzu-managed/schema--eso.yaml)
+      install_registry_dockerconfig:
+        dockerconfigjson:
+          key: secret/dev/auto-aks-dwyohslmvu-1/tanzu-sync/install-registry-dockerconfig
