@@ -1,0 +1,15 @@
+---
+tap_install:
+  secrets:
+    eso:
+      vault:
+        server: http://3.144.152.24:8200
+        namespace: ""
+        auth:
+          kubernetes:
+            mountPath: auto-aks-dwyohslmvu-1
+            role: auto-aks-dwyohslmvu-1--tap-install-secrets
+      remote_refs:
+        tap_sensitive_values:
+          sensitive_tap_values_yaml:
+            key: secret/dev/auto-aks-dwyohslmvu-1/tap/sensitive-values.yaml
